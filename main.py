@@ -87,7 +87,7 @@ class Music(commands.Cog):
     async def play(
         self, 
         ctx: commands.Context, 
-        song: Literal["Say You Won't Let Go"]
+        song: Literal["Say You Won't Let Go"]  # an example, validate for songs you downloaded on local filesystem
     ) -> None:
         
         voice = await self.do_join_checks(ctx)
