@@ -6,10 +6,6 @@ from logging import info as log_info
 import discord
 import yt_dlp as youtube_dl
 from discord.ext import commands
-from discord import app_commands
-
-from .core.helpers import membed
-from .core.constants import APP_GUILDS_IDS
 
 
 # Suppress noise about console usage from errors
@@ -36,6 +32,12 @@ FFMPEG_OPTIONS = {
 }
 
 ytdl = youtube_dl.YoutubeDL(YTDL_FORMAT_OPTIONS)
+
+
+def membed(custom_description: Optional[str] = None) -> discord.Embed:
+    """Quickly construct an embed with an optional description."""
+    membedder = discord.Embed(colour=0x2B2D31, description=custom_description)
+    return membedder
 
 
 class YTDLSource(discord.PCMVolumeTransformer):
