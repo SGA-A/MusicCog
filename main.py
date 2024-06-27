@@ -1,7 +1,7 @@
 from typing import Literal
 from os.path import basename
 from asyncio import get_event_loop
-from logging import info as log_info
+from logging import info as log_info  # set up a logger first (discord.utils.setup_logging(...))
 
 import discord
 import yt_dlp as youtube_dl
@@ -97,7 +97,7 @@ class Music(commands.Cog):
         if voice.is_playing():
             voice.stop()
 
-        pathn = f"C:\\Users\\Music\\{song}.mp3"
+        pathn = f"root:\\Music\\{song}.mp3"
         source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio(pathn))
         file_name = basename(pathn)
         
