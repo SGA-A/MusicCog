@@ -1,5 +1,5 @@
 # Music Cog
-My implementation of a music cog from my bot which I don't use anymore. It is still on my bot, but the streaming component of it has been stripped off since it violates Discord's ToS. The only part that exists is on my instance is the local filesystem version. It is mostly based off the offical discord.py's basic voice example, with a few breaking changes.
+My implementation of a music cog from my bot which I don't use anymore. It is still on my bot, but the streaming component of it has been stripped off since it violates Discord's ToS. ~~The only part that exists is on my instance is the local filesystem version~~ The local filesystem component along with it's respective cog, has now been removed from my bot. It is mostly based off the offical discord.py's basic voice example, with a few breaking changes.
 
 > [!NOTE]
 > This code was written in discord.py, and was working as of v2.4 (27th June 2024)
