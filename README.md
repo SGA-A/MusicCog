@@ -3,7 +3,7 @@ My implementation of a music cog from my bot which I don't use anymore. It is mo
 
 The local filesystem component along with it's respective cog, has now been removed from my bot instance.
 
-This code was written in discord.py, and was working as of v2.4 (27th June 2024)
+This code was written in discord.py, and was working as of v2.4 (27th June 2024) on Python v3.12.5.
 
 ## Intents
 ```py
