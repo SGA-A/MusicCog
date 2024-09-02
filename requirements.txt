@@ -1,2 +1,2 @@
-discord.py[speed, voice] @ git+https://github.com/Rapptz/discord.py.git
+discord.py[voice] @ git+https://github.com/Rapptz/discord.py.git
 yt-dlp==2024.4.9
